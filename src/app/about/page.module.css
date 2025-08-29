@@ -1,0 +1,372 @@
+.aboutPage{
+    width: 100%;
+    max-width: 100%;
+    margin: 2rem 0 2rem 0;
+    font-family: var(--font-albert-sans);
+     padding: 0.5rem 2rem;
+}
+.aboutContent{
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.aboutImage{
+    object-fit: cover
+}
+.aboutHeader{
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+.aboutTitle{
+    font-family: var(--font-montserrat-alternates);
+    font-size: 2.5rem;
+    width: 100%;
+    max-width: 85%;
+    margin: 1rem 0rem;
+}
+
+.aboutDescription{
+    font-family: var(--font-albert-sans);
+    font-size: 0.85rem;
+    width: 100%;
+    max-width: 85%;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.aboutDivider{
+    margin: 2rem 0;
+}
+.aboutCardContainer{
+    margin: 2rem 3rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr 1fr 3fr;
+    /* grid-template-columns: repeat(5, 1fr); */
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.aboutCard{
+    width: 100%;
+    max-width: 900px;
+}
+
+.aboutCardTitleContainer{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.aboutCardTitle{
+    font-family: var(--font-montserrat-alternates);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.aboutCardDescription{
+    font-family: var(--font-albert-sans);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.aboutCardDividerContainer{
+   width: 100%;
+   max-width: 30px;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+}
+.aboutCardDivider{
+    width: 1.5px;
+    background-color: #666666;
+    height: 100%;
+}
+
+.visionContainer{
+    width: 100%;
+    max-width: 70%;
+    text-align: start;
+    margin: 2rem auto;
+}
+
+.visionTitle{
+    font-family: var(--font-montserrat-alternates);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.visionDescription{
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+.visionDividerContainer{
+     width: 100%;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     margin: 1rem 0;
+}
+.visionDivider{
+    
+    width: 100%;
+    max-width: 200px;
+    height: 1.5px;
+    background-color: #666666;
+    margin: 0 auto;
+   
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutContent{
+        margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.aboutImageContainer{
+    width: 1300px;
+}
+    .aboutImage{
+    object-fit: cover;
+    width: 100%;
+    max-width: 600px;
+}
+.aboutTitle{
+    font-size: 2rem;
+     width: 100%;
+    max-width: 90%;
+}
+.aboutCardTitle{
+    font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 989px) {
+
+.aboutCardTitle{
+    font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 960px) {
+
+ .aboutDescription{
+    width: 100%;
+    max-width: 100%;
+ }
+.aboutTitle{
+    font-size: 1.5rem;
+     width: 100%;
+    max-width: 100%;
+}
+.aboutCardTitle{
+    font-size: 0.8rem;
+}
+}
+
+@media screen and (max-width: 850px) {
+.aboutTitle{
+    font-size: 1.5rem;
+     width: 100%;
+    max-width: 100%;
+}
+.aboutCardTitle{
+    font-size: 0.8rem;
+}
+.aboutCardContainer{
+    margin: 2rem 1rem;  
+}
+
+}
+
+@media screen and (max-width: 761px) {
+
+.aboutTitle{
+    font-size: 1.5rem;
+     width: 100%;
+    max-width: 100%;
+}
+.aboutCardTitle{
+    font-size: 0.8rem;
+}
+.aboutCardContainer{
+    margin: 2rem 0rem;  
+}
+}
+
+
+@media screen and (max-width: 716px) {
+
+
+.aboutImageContainer{
+    width: 500px;
+
+}
+    .aboutImage{
+    object-fit: cover;
+ 
+} 
+.aboutContent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.aboutTitle{
+    font-size: 1.5rem;
+     width: 100%;
+    max-width: 100%;
+}
+.aboutCardTitle{
+    font-size: 0.7rem;
+}
+.aboutCardDescription{
+    font-size: 0.7rem;
+}
+
+.aboutCardContainer{
+    margin: 2rem 0rem;  
+    width: 100%;
+    max-width: 100%;
+}
+
+.visionContainer{
+    width: 100%;
+    max-width: 100%;
+}
+.visionTitle{
+    font-size: 1.5rem;
+}
+.visionDescription{
+    font-size: 0.8rem;
+}
+}
+
+@media screen and (max-width: 650px) {
+
+.aboutCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+.aboutCardTitle{
+    font-size: 1.2rem;
+}
+.aboutCardDescription{
+    font-size: 0.8rem;
+} 
+}
+
+@media screen and (max-width: 580px) {
+
+
+.aboutImageContainer{
+    margin: 0 auto;
+   
+
+}
+    .aboutImage{
+    object-fit: cover;
+ 
+} 
+
+.visionContainer{
+    width: 100%;
+    max-width: 100%;
+}
+.visionTitle{
+    font-size: 1.5rem;
+}
+.visionDescription{
+    font-size: 0.8rem;
+}
+}
+
+
+@media screen and (max-width: 560px) {
+
+.aboutImageContainer{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+
+}
+    .aboutImage{
+    object-fit: contain;
+ 
+} 
+
+.visionContainer{
+    width: 100%;
+    max-width: 100%;
+}
+.visionTitle{
+    font-size: 1.5rem;
+}
+.visionDescription{
+    font-size: 0.8rem;
+}
+}
+
+
+@media screen and (max-width: 580px) {
+
+.aboutImageContainer{
+    margin: 0 auto;
+
+}
+    .aboutImage{
+    object-fit: cover;
+ 
+} 
+
+.visionContainer{
+    width: 100%;
+    max-width: 100%;
+}
+.visionTitle{
+    font-size: 1.5rem;
+}
+.visionDescription{
+    font-size: 0.8rem;
+}
+}
+
+
+@media screen and (max-width: 447px) {
+.aboutPage{
+    padding: 0 0.5rem;
+}
+.aboutTitle{
+    font-size: 1.2rem;
+}
+.aboutDescription{
+    font-size: 0.7rem;
+}
+.aboutCardImage{
+    width: 20px;
+    height: 20px;
+}
+.aboutCardTitle{
+    font-size: 1rem;
+}
+.aboutCardDescription{
+    font-size: 0.7rem;
+}
+.visionTitle{
+    font-size: 1.2rem;
+}
+.visionDescription{
+    font-size: 0.7rem;
+}
+}
