@@ -42,8 +42,9 @@ html{
   display: flex;
   align-items: center;
   justify-content: space-between;
-   padding: 0.5rem 2rem;
+  padding: 0.5rem 2rem;
   position: fixed;
+  top: 0;
   background-color: white;
 }
 .nav .nav-list{
