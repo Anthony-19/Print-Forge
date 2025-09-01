@@ -1,0 +1,40 @@
+.modelLayoutContainer{
+    margin-top: 4.5rem;
+    padding: 0.5rem 2rem;
+}
+.modelContainer{
+     display: flex;
+    align-items: start;
+    justify-content: center;
+    
+}
+.categoryListContainer{
+    width: 100%;
+    max-width: 20%;
+    background-color: green;
+    height: 100vh;
+     top: 0;
+    bottom: 0;
+   /* position: fixed;
+    top: 0;
+    bottom: 0; */
+}
+.categoriesSection{
+    width: 100%;
+    max-width: 80%;
+    margin-left: 1rem;
+    background-color: yellow;
+}
+.categoryLink{
+    text-decoration: none;
+     color: var(--nav-text-color);
+}
+.categoryList li{
+    
+    list-style: none;
+    font-size: 0.53rem;
+    font-weight: 500;
+    font-family: var(--font-albert-sans);
+    color: var(--nav-text-color);
+    padding: 0.3rem 0rem;
+}
