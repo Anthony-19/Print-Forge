@@ -8,326 +8,512 @@ function ModelPage() {
     <div style={{
         fontSize: '1rem'
     }} className={styles.categoriesSection}>
-        <section className='categoryHeader'>
+        <section className={styles.categoryHeader}>
             <h2>3D Models</h2>
             <Form action="/3d-models/">
                 <input 
                 type="text" 
                 name="query" 
-                placeholder="search for a model" />
+                placeholder="Search For a model" 
+                className={styles.searchInput}
+                />
             </Form>
         </section>
-        <section className='categoryCardContainer'>
-            <div className="categoryCard">
+        <section className={styles.categoryCardContainer}>
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
 
-            <div className="categoryCard">
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
 
-            <div className="categoryCard">
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
 
-
-            <div className="categoryCard">
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
 
-
-            <div className="categoryCard">
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
 
-
-            <div className="categoryCard">
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
 
-
-            <div className="categoryCard">
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
 
-
-            <div className="categoryCard">
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
 
-
-            <div className="categoryCard">
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
 
-
-            <div className="categoryCard">
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
 
-
-
-            <div className="categoryCard">
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
 
-
-
-            <div className="categoryCard">
+            <div className={styles.categoryCard}>
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className='cardImage'
+                    className={styles.cardImage}
                     width={300}
                     height={300}
                     priority
                 />
-                <div className="categoryCardBody">
-                    <h3 className='cardTitle'>Printer Upgrade Kit</h3>
-                    <p className='cardDescription'>Enhancement parts for 3D printer performance</p>
-                    <button className='cardCategory'>3D-Printer</button>
-                    <div className='reactionContainer'>
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
                         <Image 
                             src="/love-reaction.svg"
                             alt="Reaction"
                             width={100}
                             height={100}
+                            className={styles.reactionImage}
                         />
-                        <p className='numberReaction'>300</p>
+                        <p className={styles.numberReaction}>300</p>
                     </div>
                 </div>
             </div>
+
+            <div className={styles.categoryCard}>
+                <Image 
+                    src="/about-hero-image.svg"
+                    alt="3D Model"
+                    className={styles.cardImage}
+                    width={300}
+                    height={300}
+                    priority
+                />
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
+                        <Image 
+                            src="/love-reaction.svg"
+                            alt="Reaction"
+                            width={100}
+                            height={100}
+                            className={styles.reactionImage}
+                        />
+                        <p className={styles.numberReaction}>300</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.categoryCard}>
+                <Image 
+                    src="/about-hero-image.svg"
+                    alt="3D Model"
+                    className={styles.cardImage}
+                    width={300}
+                    height={300}
+                    priority
+                />
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
+                        <Image 
+                            src="/love-reaction.svg"
+                            alt="Reaction"
+                            width={100}
+                            height={100}
+                            className={styles.reactionImage}
+                        />
+                        <p className={styles.numberReaction}>300</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.categoryCard}>
+                <Image 
+                    src="/about-hero-image.svg"
+                    alt="3D Model"
+                    className={styles.cardImage}
+                    width={300}
+                    height={300}
+                    priority
+                />
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
+                        <Image 
+                            src="/love-reaction.svg"
+                            alt="Reaction"
+                            width={100}
+                            height={100}
+                            className={styles.reactionImage}
+                        />
+                        <p className={styles.numberReaction}>300</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.categoryCard}>
+                <Image 
+                    src="/about-hero-image.svg"
+                    alt="3D Model"
+                    className={styles.cardImage}
+                    width={300}
+                    height={300}
+                    priority
+                />
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
+                        <Image 
+                            src="/love-reaction.svg"
+                            alt="Reaction"
+                            width={100}
+                            height={100}
+                            className={styles.reactionImage}
+                        />
+                        <p className={styles.numberReaction}>300</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.categoryCard}>
+                <Image 
+                    src="/about-hero-image.svg"
+                    alt="3D Model"
+                    className={styles.cardImage}
+                    width={300}
+                    height={300}
+                    priority
+                />
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
+                        <Image 
+                            src="/love-reaction.svg"
+                            alt="Reaction"
+                            width={100}
+                            height={100}
+                            className={styles.reactionImage}
+                        />
+                        <p className={styles.numberReaction}>300</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.categoryCard}>
+                <Image 
+                    src="/about-hero-image.svg"
+                    alt="3D Model"
+                    className={styles.cardImage}
+                    width={300}
+                    height={300}
+                    priority
+                />
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
+                        <Image 
+                            src="/love-reaction.svg"
+                            alt="Reaction"
+                            width={100}
+                            height={100}
+                            className={styles.reactionImage}
+                        />
+                        <p className={styles.numberReaction}>300</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.categoryCard}>
+                <Image 
+                    src="/about-hero-image.svg"
+                    alt="3D Model"
+                    className={styles.cardImage}
+                    width={300}
+                    height={300}
+                    priority
+                />
+                <div className={styles.categoryCardBody}>
+                    <h3 className={styles.cardTitle}>Printer Upgrade Kit</h3>
+                    <p className={styles.cardDescription}>Enhancement parts for 3D printer performance</p>
+                    <button className={styles.cardCategory}>3D-Printer</button>
+                    <div className={styles.reactionContainer}>
+                        <Image 
+                            src="/love-reaction.svg"
+                            alt="Reaction"
+                            width={100}
+                            height={100}
+                            className={styles.reactionImage}
+                        />
+                        <p className={styles.numberReaction}>300</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
      
     </div>

@@ -1,4 +1,4 @@
-import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
+import { Albert_Sans, Montserrat_Alternates, Inter } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image"
 import "./globals.css";
@@ -16,7 +16,12 @@ const montserratAlternates = Montserrat_Alternates({
   weight: ["100","200","300","400","500","600","700","800","900"],
 });
 
-
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["100","200","300","400","500","600","700","800","900"],
+  display: "swap"
+});
 
 export const metadata = {
   title: "Print Forge",
@@ -26,7 +31,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserratAlternates.variable} ${albertSans.variable}`}>
+      <body className={`${montserratAlternates.variable} ${albertSans.variable} ${inter.variable}`}>
         <section className="container">
           <div className="print-forge-container">
             <header className="header">
