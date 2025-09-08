@@ -1,14 +1,27 @@
 
 import Link from "next/link";
 import styles from './page.module.css'
+import data from '../data/data.json'
 
 
-export default function ModelLayout({ children }) {
+export default async function ModelLayout({ children }) {
+    // const data = await fetch('http://localhost:3000/api/3d-models', { cache: 'no-store' });
+    // const response = await data.json()
+    const response = data
   return (
         <section className={styles.modelLayoutContainer}>
           <div className={styles.modelContainer}>
             <section className={styles.categoryListContainer}>
                <ul className={styles.categoryList}>
+                <li >
+                    <Link href="/3d-models" className={styles.categoryLink}>All</Link>
+                </li>
+                {response.map((item) => (
+                <li key={item.id}>
+                    <Link href={`/3d-models/${item.id}`} className={styles.categoryLink}>{item.name.toUpperCase()}</Link>
+                </li>
+
+                ))}
                 <li >
                     <Link href="/3d-models/category1" className={styles.categoryLink}>All</Link>
                 </li>

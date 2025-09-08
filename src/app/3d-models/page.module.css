@@ -27,8 +27,18 @@
 
 .categoryList {
   position: fixed;
-  top: 200px;
+  top: 100px;
+  height: 80vh;
+  overflow-y: auto;
+   /* Firefox */
+   /* scrollbar-width: none;       
+  -ms-overflow-style: none; */
 }
+
+/* Chrome, Safari, Opera */
+/* .categoryList::-webkit-scrollbar {
+  display: none;                
+} */
 .categoryList li {
   list-style: none;
   font-size: 0.53rem;
