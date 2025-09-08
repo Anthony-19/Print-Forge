@@ -12,6 +12,7 @@
 .categoryListContainer {
   width: 100%;
   max-width: 20%;
+  /* background-color: green; */
   position: relative;
 }
 .categoriesSection {
@@ -41,7 +42,7 @@
 } */
 .categoryList li {
   list-style: none;
-  font-size: 0.53rem;
+  font-size: 0.6rem;
   font-weight: 500;
   font-family: var(--font-albert-sans);
   color: var(--nav-text-color);
@@ -155,6 +156,31 @@
     gap: 1.5rem;
   }
 }
+@media screen and (max-width: 1010px) {
+  .categoryList li {
+    font-size: 0.7rem;
+    margin-right: 1rem;
+  }
+
+  .categoryListContainer{
+    /* background-color: green; */
+    display: flex;
+    margin-left: 0rem;
+    padding-left: 0rem;
+    justify-content: start;
+    width: 30%;
+    max-width: 100%;
+    /* align-items: start; */
+  }
+  .categoryCardContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .categoriesSection{
+    width: 70%;
+    max-width: 100%;
+  }
+}
 
 @media screen and (max-width: 933px) {
   .categoryList li {
@@ -195,6 +221,8 @@
     padding-bottom: 0.7rem;
 
     width: 100%;
+     height: 5vh;
+    overflow-y: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE/Edge */
   }
@@ -203,7 +231,7 @@
     display: none; /* Chrome, Safari, Opera */
   }
   .categoryList li {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
      /* flex: 0 0 25%; */
     flex: 0 0 auto; /* make each item take about half the row */
     /* background-color: yellow; */
@@ -240,6 +268,14 @@
   }
 }
 
+@media screen and (max-width: 541px) {
+   .categoryList {
+  position: fixed;
+  height: 5vh;
+  overflow-y: auto;
+}
+}
+
 @media screen and (max-width: 522px) {
   .categoriesSection {
     width: 100%;
@@ -263,5 +299,13 @@
   .searchInput {
     width: 300px;
     max-width: 300px;
+  }
+  .categoryList {
+  position: fixed;
+  height: 5vh;
+  overflow-y: auto;
+}
+   .categoryList li {
+    font-size: 0.7rem;
   }
 }
