@@ -1,6 +1,7 @@
 // 'use client'
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import Form from 'next/form'
 import styles from './page.module.css'
 import data from '../data/data.json'
@@ -16,6 +17,9 @@ async function ModelPage({searchParams}) {
     const filteredTest = query ? response.filter((item) => (
         item.category.toLowerCase().includes(query.toLowerCase()))) : response 
 
+    if(query && filteredTest.length === 0){
+        return <div>No results found</div>
+    }
   return (
     <div style={{
         fontSize: '1rem'
@@ -33,6 +37,7 @@ async function ModelPage({searchParams}) {
         </section>
         <section className={styles.categoryCardContainer}>
               {filteredTest && filteredTest.map((item) =>(
+                <Link href={`3d-models/id/${item.id}`} key={item.id} className={styles.link}>
                    <div key={item.id} className={styles.categoryCard}>
               
                 <Image 
@@ -59,6 +64,7 @@ async function ModelPage({searchParams}) {
                     </div>
                 </div>
             </div> 
+               </Link>
                 ))}            
 
         </section>

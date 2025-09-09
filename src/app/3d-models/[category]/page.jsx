@@ -1,6 +1,7 @@
 import data from '../../data/data.json'
 import styles from '../page.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 export default async function ModalPage({params}){
     // console.log(params)
     // const {id} = await  params
@@ -24,6 +25,7 @@ export default async function ModalPage({params}){
 
         <section className={styles.categoryCardContainer}>
             {dataList.map((item) =>(
+                <Link href={`/3d-models/id/${item.id}`} key={item.id} className={styles.link}>
                       <div key={item.id} className={styles.categoryCard}>
               
                 <Image 
@@ -50,7 +52,7 @@ export default async function ModalPage({params}){
                     </div>
                 </div>
             </div> 
-                
+            </Link>    
             ))}
              
          

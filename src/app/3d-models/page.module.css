@@ -75,6 +75,10 @@
   color: black;
 }
 
+.link{
+  text-decoration: none;
+  color: inherit;
+}
 .categoryCardContainer {
   margin-top: 1rem;
   display: grid;
@@ -111,18 +115,17 @@
 .cardDescription {
   font-size: 0.7rem;
   font-weight: 500;
-  color: #1e1e1e;
+  color: #1e1e1e !important;
   margin: 0.5rem 0;
 }
 
 .cardCategory {
   font-size: 0.5rem;
   font-weight: 600;
-  color: #1e1e1e;
+  color: #1e1e1e !important;
   background: none;
   border: 1px solid #a1a1a1;
   padding: 0.2rem 0.3rem;
-  color: #1e1e1e;
   border-radius: 1rem;
   font-family: var(--font-albert-sans);
 }
@@ -148,6 +151,54 @@
   color: #606060;
   font-family: var(--font-albert-sans);
 }
+
+.categoryPageCard{
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.largeReactionContainer{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+}
+.largeReaction{
+   width: 100%;
+  max-width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.largeNumberReaction{
+  font-size: 0.8rem;
+}
+
+.largeCardTitle{
+  font-size: 1.5rem;
+}
+.buttonSection{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.largeCardDescription{
+  font-size: 1rem;
+  font-weight: 400;
+  /* line-height: 1.5rem; */
+  color: #1e1e1e !important;
+  margin: 0.5rem 0;
+}
+.cardDate{
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #1E1E1E;
+  font-family: var(--font-albert-sans);
+}
+
 
 @media screen and (max-width: 1080px) {
   .categoryList li {
