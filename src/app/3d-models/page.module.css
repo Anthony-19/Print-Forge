@@ -248,6 +248,18 @@
     gap: 1.5rem;
   }
 }
+@media screen and (max-width: 840px) {
+  .categoryPageCard{
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+}
 
 @media screen and (max-width: 700px) {
   .modelLayoutContainer {
@@ -309,6 +321,28 @@
   .categoryCardContainer {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .categoryPageCardContainer{
+    padding: 1rem;
+  }
+  
+  .cardImageId{
+    width: 350px !important;
+    height: 350px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .categoryPageCardContainer{
+    padding: 1rem;
+  }
+  
+  .cardImageId{
+    width: 300px !important;
+    height: 300px !important;
   }
 }
 

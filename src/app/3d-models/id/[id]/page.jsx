@@ -18,7 +18,7 @@ export default async function CategoryPage({params}){
                 <Image 
                     src="/about-hero-image.svg"
                     alt="3D Model"
-                    className={styles.cardImage}
+                    className={styles.cardImageId}
                     width={400}
                     height={400}
                     priority
